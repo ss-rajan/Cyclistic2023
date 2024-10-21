@@ -2,13 +2,14 @@
 # Cyclistic Capstone Case Study
 ## Table of contents 
 
-- Introduction
-- Business Task Statement
-- Data Sources
-- Processing and Cleaning
-- Analysis and Visualizations
-- Recommendations
+1. [Introduction](Capstone1.md#introduction) 
+2. [Business Task Statement](Capstone1.md#business-task-statement) 
+3. [Data Sources](Capstone1.md#data-sources) 
+4. [Processing and Cleaning](Capstone1.md#processing-and-cleaning) 
+5. [Analysis and Visualizations](Capstone1.md#analysis-and-visualizations) 
+6. [Recommendations](Capstone1.md#recommendations)
 
+---
 ###  Introduction
 
 This case study is the capstone for the course Google Data Analytics Professional Certificate. 
@@ -31,7 +32,7 @@ Based on the comprehensive data insights and visualizations, the team is tasked 
 
 The data used in this case study is made available by Motivate International Inc. under a specific license. The data can be accessed from the Divvy Bikes data license agreement [here](https://divvybikes.com/data-license-agreement) .
 
-Our dataset for the entire year of 2023 consists of 12 files, each representing a month. The files can be found here. The data records include details such as ride ID, start and end times, types of bikes, and member types. However, it is important to note that the data does not contain any personal information.
+Our dataset for the entire year of 2023 consists of 12 files, each representing a month. The files can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html). The data records include details such as ride ID, start and end times, types of bikes, and member types. However, it is important to note that the data does not contain any personal information.
 
 The database tool utilized for this analysis is DBeaver with SQL.
 
@@ -83,7 +84,7 @@ There are 3 additional columns created for better analysis of our data set.
 3. **Month**: This column can reveal seasonal trends which could help optimizing inventory and tailor marketing strategies for specific times of the year.
 
 ---
-### Data Analysis and Viz
+### Analysis and Visualizations
 
 From the 5.5 million records, we analyzed the data by running queries and creating visualizations, which helped us uncover the answers we sought and identify trends and patterns. The SQL queries were executed in DBeaver, while Tableau Public was used for the visualizations.
 
