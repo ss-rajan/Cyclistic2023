@@ -23,9 +23,9 @@ Based on the comprehensive data insights and visualizations, the team is tasked 
 ---
 ###  Business Task Statement
 
-**Create a marketing strategy to increase the number of annual members.**
+***Create a marketing strategy to increase the number of annual members.***
 
-*Objective*: How do annual members and casual riders use Cyclistic bikes differently? To answer this question, the analyst must clean, analyze, and visualize the data.
+> **Objective** : How do annual members and casual riders use Cyclistic bikes differently? To answer this question, the analyst must clean, analyze, and visualize the data.
 
 ---
 #### Data Sources
@@ -51,9 +51,9 @@ The columns `started_at` and `ended_at` currently have a data type of `VARCHAR`,
 Now that the data types have been standardized, we proceed with Data Cleaning. 
 
 
-   #### Data Cleaning
+> #### Data Cleaning
 
-The cleaning was executed using this query. The total records before cleaning: 5,719,877
+The cleaning was executed using this query. The total records before cleaning: `5,719,877`
  
 The data cleaning process includes the removal of:
  
@@ -71,9 +71,9 @@ The data cleaning process includes the removal of:
 
 After cleaning the data, a total of **147,582** rows were removed. The queries were executed again to ensure that none of the records contained discrepancies. 
 
-The final count of rows is now **5,572,295**.
+The final count of rows is now `5,572,295`.
 
-#### Data manipulation
+> #### Data manipulation
 
 There are 3 additional columns created for better analysis of our data set.
 
@@ -84,17 +84,22 @@ There are 3 additional columns created for better analysis of our data set.
 3. **Month**: This column can reveal seasonal trends which could help optimizing inventory and tailor marketing strategies for specific times of the year.
 
 ---
+
 ### Analysis and Visualizations
 
 From the 5.5 million records, we analyzed the data by running queries and creating visualizations, which helped us uncover the answers we sought and identify trends and patterns. The SQL queries were executed in DBeaver, while Tableau Public was used for the visualizations.
 
 1) **Total Rides shared per user type**
 
+ ![Ride Share Analysis](Viz/Ride_Share.png)
+
 *Insights*:
 
 - Members account for 64.53% of the total rides, when compared to the casual users.
 
 2) **Calculating Bike types used per user type**
+
+![Rides per user](Viz/Bike_User.png)
 
 *Insights*:
   
@@ -104,6 +109,10 @@ From the 5.5 million records, we analyzed the data by running queries and creati
 
 3.  **Distribution based on number or rides**
 
+![Rides per Hour](Viz/Ride_Hour.png)
+![Rides per Day](Viz/Ride_Day.png)
+![Rides per Month](Viz/Rides_Month.png)
+
 *Insights:*
  
 -  Members primarily use the service for daily commutes, with significant ride spikes around 08:00 and 17:00, indicating peak office hours.  
@@ -111,6 +120,9 @@ From the 5.5 million records, we analyzed the data by running queries and creati
 - The number of rides peaks from May to September, likely due to favorable weather conditions for biking.
 
 4.  **Distribution based on average duration of rides.**
+
+![Duration per Day](Viz/Duration_Day.png)
+![Duration per Month](Viz/Duration_Month.png)
 
 *Insights*: 
 
@@ -120,15 +132,17 @@ From the 5.5 million records, we analyzed the data by running queries and creati
 
 5. **Distance covered per month**
 
+![Rides per Month](Viz/Rides_Month.png)
+
 For this analysis, the start and end points are determined using latitude and longitude coordinates. The tool used here is Tableau, which allows for the creation of calculated fields.
 
-- Starting Point: MAKEPOINT([Start Lat], [Start Lng])
-- Ending Point: MAKEPOINT([End Lat], [End Lng])
+>- Starting Point: MAKEPOINT([Start Lat], [Start Lng])
+>- Ending Point: MAKEPOINT([End Lat], [End Lng])
 
 
 The distance is calculated using the following formula, where ‘mi’ indicates that the distance is measured in miles:
 
-- Distance: DISTANCE([Starting Point], [End Point], 'mi')**
+> - Distance: DISTANCE([Starting Point], [End Point], 'mi')**
 
 *Insights*:
 
@@ -137,6 +151,9 @@ The distance is calculated using the following formula, where ‘mi’ indicates
 - The average distance covered by both user groups ranges between 1.0 and 1.4 miles.
 
 6. Location where bikes were most picked up and dropped off, **Streeter Dt & Grand Avenue.**
+
+![Location for most pickups and drops](Viz/Location)
+
 ---
 ### Recommendations 
 
