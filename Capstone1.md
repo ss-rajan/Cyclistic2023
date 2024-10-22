@@ -28,7 +28,7 @@ Based on the comprehensive data insights and visualizations, the team is tasked 
 > **Objective** : How do annual members and casual riders use Cyclistic bikes differently? To answer this question, the analyst must clean, analyze, and visualize the data.
 
 ---
-#### Data Sources
+### Data Sources
 
 The data used in this case study is made available by Motivate International Inc. under a specific license. The data can be accessed from the Divvy Bikes data license agreement [here](https://divvybikes.com/data-license-agreement) .
 
@@ -53,9 +53,9 @@ Now that the data types have been standardized, we proceed with Data Cleaning.
 
 > #### Data Cleaning
 
-The cleaning was executed using this query. The total records before cleaning: `5,719,877`
+The cleaning was executed using this [query](Cleaning_data.sql). The total records before cleaning: `5,719,877`
  
-The data cleaning process with this [query](Cleaning_data.sql) includes the removal of:
+The data cleaning process includes the removal of:
  
 1. **Missing values**
    
