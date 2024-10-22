@@ -42,7 +42,7 @@ The database tool utilized for this analysis is DBeaver with SQL.
 
 DBeaver is used to process the data; however, the database needs to be cleaned before it can be analyzed and visualized. Since the data is presented in a monthly format, all 12 files are combined into one file to create a yearly database, allowing for comprehensive processing.
 
-The total number of records is 5,719,877 after combining the dataset into ‘Cyclistic2023’ using this query.
+The total number of records is 5,719,877 after combining the dataset into ‘Cyclistic2023’ using this [query](Data_combination.sql).
 
 Now that the data has been combined, it needs to be explored before any cleaning occurs. The database contains some columns whose data types need to be changed.
 
@@ -55,7 +55,7 @@ Now that the data types have been standardized, we proceed with Data Cleaning.
 
 The cleaning was executed using this query. The total records before cleaning: `5,719,877`
  
-The data cleaning process includes the removal of:
+The data cleaning process with this [query](Cleaning_data.sql) includes the removal of:
  
 1. **Missing values**
    
@@ -75,7 +75,7 @@ The final count of rows is now `5,572,295`.
 
 > #### Data manipulation
 
-There are 3 additional columns created for better analysis of our data set.
+There are 3 additional columns created with this [query](Data_manipulation.sql) for better analysis of our data set along with the existing columns.
 
 1. **Ride Duration (in minutes)**: The column allows for a deeper understanding of customer behavior, helping the company identify peak usage times and optimize bike availability. 
 
@@ -87,7 +87,7 @@ There are 3 additional columns created for better analysis of our data set.
 
 ### Analysis and Visualizations
 
-From the 5.5 million records, we analyzed the data by running queries and creating visualizations, which helped us uncover the answers we sought and identify trends and patterns. The SQL queries were executed in DBeaver, while Tableau Public was used for the visualizations.
+From the 5.5 million records, we analyzed the data by running queries and creating visualizations, which helped us uncover the answers we sought and identify trends and patterns. The SQL [query](Data_Analysis.sql) were executed in DBeaver, while Tableau Public was used for the visualizations.
 
 1) **Total Rides shared per user type**
 
